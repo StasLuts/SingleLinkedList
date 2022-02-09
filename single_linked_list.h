@@ -7,8 +7,6 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-
 template <typename Type>
 class SingleLinkedList
 {
@@ -264,7 +262,7 @@ void swap(SingleLinkedList<Type>& lhs, SingleLinkedList<Type>& rhs) noexcept
 template <typename Type>
 bool operator==(const SingleLinkedList<Type>& lhs, const SingleLinkedList<Type>& rhs)
 {
-    return equal(lhs.begin(), lhs.end(), rhs.begin());
+    return std::equal(lhs.begin(), lhs.end(), rhs.begin());
 }
 
 template <typename Type>
